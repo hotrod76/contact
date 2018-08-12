@@ -5,14 +5,12 @@ namespace Tests\Feature;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class ExampleTest extends TestCase
+class CompaniesTest extends TestCase
 {
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
-    public function testBasicTest()
+    use RefreshDatabase;
+
+    /** @test */
+    public function can_see_list_of_compaines()
     {
         $response = $this->get('/');
 

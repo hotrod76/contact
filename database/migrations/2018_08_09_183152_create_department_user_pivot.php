@@ -16,7 +16,7 @@ class CreateDepartmentUserPivot extends Migration
         Schema::create('department_user', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('department_id');
-            $tabel->unsignedInteger('user_id');
+            $table->unsignedInteger('user_id');
             $table->timestamps();
         });
     }

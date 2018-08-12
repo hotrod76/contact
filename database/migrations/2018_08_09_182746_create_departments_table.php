@@ -18,7 +18,7 @@ class CreateDepartmentsTable extends Migration
             $table->unsignedInteger('company_id');
             $table->string('slug');
             $table->string('name');
-            $tabel->string('description');
+            $table->string('description');
             $table->boolean('is-inactive')->default(false);
             $table->timestamps();
         });
